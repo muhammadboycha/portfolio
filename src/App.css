@@ -1,11 +1,11 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  color: #363636;
+  line-height: 30px;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +35,266 @@
   to {
     transform: rotate(360deg);
   }
+}
+.pageSectionWrapper{
+  padding-top: 110px;
+}
+
+.logoWrapper{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+    position: fixed;
+      width: 100%;
+      box-sizing: border-box;
+      z-index: 2;
+      background-color: #ffffff;
+}
+
+.logoWrapper > div{
+      display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.logo{
+width: 230px;
+height: auto;
+}
+
+.menuItemWrapper
+{
+display: flex;
+gap: 30px;
+align-items: center;
+}
+
+.menuItem {
+  cursor: pointer;
+letter-spacing: 1px;
+    border: none;
+      background: none;
+      font-weight: 500;
+      font-size: 17px;
+      color: #363636;
+
+}
+
+@media (max-width: 800px) {
+  .menuItemWrapper {
+    gap: 3px !important;
+  }
+  .menuItem{
+font-size: 15px;
+  }
+  .logo{
+    width: 150px;
+  }
+}
+@media (max-width: 600px) {
+  .menuItemWrapper {
+    gap: 3px !important;
+  }
+
+  .menuItem {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+}
+
+.userProfile{
+width: 350px;
+position: relative;
+  margin-bottom: -10px;
+
+}
+
+.profileSectionLeft
+{
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+width: 100%;
+
+}
+.profileSectionRight{
+  padding: 15px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+.aboutUsSectionLeft {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.aboutUsSectionRight {
+  padding: 15px;
+  display: flex;
+
+}
+.iamtext{
+  font-size: 3rem;
+  margin-bottom: 0px;
+  line-height: 50px;
+}
+.pageTitle{
+  font-size: 3rem;
+    margin-bottom: 0px;
+text-align: center;
+}
+
+.activeText{
+
+  color:#3F51B5;
+}
+.contactNowButton{
+background-color: #3F51B5;
+  color: #ffffff;
+  border-radius: 25px;
+  border: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.contactNowButton >h3
+{
+      display: inline-block;
+      letter-spacing: 1px;
+      margin: 0px;
+}
+.paragraphText{
+
+  padding: 5px 0px;
+  margin-bottom: 15px;
+}
+
+.collegProfile{
+  border-radius: 50%;
+  background-color: white;
+  width: 300px;
+}
+
+.qualificationSection{
+  background-color: #3f51b50f;
+  border-left: 5px solid #3F51B5;
+  position: relative;
+  padding: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.skillsSection{
+    background-color: #ffffff;
+      border-left: 5px solid #3F51B5;
+      position: relative;
+      padding: 30px 25px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      min-height: 107px;
+}
+.skillsPills{
+  background-color: #3F51B5;
+  padding: 8px 25px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  align-self: baseline;
+  }
+.qualificationList{
+  list-style: none;
+  position: relative;
+}
+.qualificationSection::after {
+    content: "";
+    height: 15px;
+    width: 31px;
+    background: #3F51B5;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    left: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.skillsSection::after {
+  content: "";
+  height: 15px;
+  width: 31px;
+  background: #3F51B5;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  left: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.whatIknow {
+  text-align: center;
+  margin: 0px;
+  letter-spacing: 1px;
+  margin-bottom: -30px;
+}
+
+.othersWrapper{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+}
+.projectDescription{
+  color:#3F51B5;
+  font-size:20px;
+}
+.projectInfoList{
+    list-style:decimal;
+      position: relative;
+      color: #3F51B5;
+}
+
+.screensWrapper{
+display: flex;
+flex-direction: column;
+gap: 10px;
+justify-content: center;
+align-items: center;
+}
+.screens{
+width: 100%;
+}
+
+.screensWrapper > h3{
+  margin: 0px;
+}
+
+.contactWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactDetailsText{
+  margin: 0px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
 }
